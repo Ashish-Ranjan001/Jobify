@@ -8,7 +8,6 @@ import Job from './models/Job.js';
 
 const start = async () => {
   try {
-    console.log(process.env.MONGO_URL)
     await connectDB(process.env.MONGO_URL);
 
     const jsonProducts = JSON.parse(
